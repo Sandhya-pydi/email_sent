@@ -17,7 +17,7 @@ def read_data_send_mail():
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
         s.login(sender_email, "xxxx xxxx xxxx xxxx") #this key differs from mail to mail
-        # open mail>manage accounts>security>turn on two step verification>app password>enter mail password>enter any name >generated app password will be displayed>copy and paste it here
+        # open mail > manage accounts > security > turn on two step verification > app password > enter mail password > enter any name > generated app password will be displayed > copy and paste it here
         message = f"Hi your OTP number is {otp_number}"
         try:
             s.sendmail(sender_email, i, message)
