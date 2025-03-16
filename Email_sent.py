@@ -16,7 +16,7 @@ def read_data_send_mail():
         print(otp_number)
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
-        s.login(sender_email, "skey yejp oykm cbgc")
+        s.login(sender_email, "xxxx xxxx xxxx xxxx") #this key differs from mail to mail
         message = f"Hi your OTP number is {otp_number}"
         try:
             s.sendmail(sender_email, i, message)
