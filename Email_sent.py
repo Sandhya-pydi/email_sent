@@ -9,7 +9,7 @@ def read_data_send_mail():
     except:
         print("file not available")
 
-    sender_email="sandhyapydi630@gmail.com"
+    sender_email="xxxxxxxxxxxx@gmail.com"
 
     for i in student_mails:
         otp_number=random.randint(00000,9999)
